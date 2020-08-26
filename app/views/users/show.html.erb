@@ -1,0 +1,15 @@
+<!-- id -->
+<p><%= @user.id %></p>
+
+<!-- created at -->
+<p><%= @user.created_at %></p>
+
+<!-- updated at  -->
+<p><%= @user.updated_at %></p>
+
+<!-- show posts -->
+
+<% @user_posts.each do |post| %>
+<p><%= post.title %></p>
+<p><%= post.body %></p>
+<% end %>
